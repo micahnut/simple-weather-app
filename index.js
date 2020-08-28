@@ -94,7 +94,7 @@ $(document).ready(
         console.log(date);
 
         $.ajax({
-            url: "http://api.weatherapi.com/v1/current.json?key=9712bc9214b14e0aa9d151747202308&q="+city+"&dt="+date,
+            url: "https://api.weatherapi.com/v1/current.json?key=9712bc9214b14e0aa9d151747202308&q="+city+"&dt="+date,
             success: function(data, textStatus, jqXHR){
               if(data){
 
