@@ -79,6 +79,8 @@ function createRow(weather,name,phoneNum) {
 $(document).ready(
   function(){
 
+  document.getElementById("view").disabled = true;
+  document.getElementById("check").disabled = true;
 
   $("#check").click(function(){
 
@@ -114,10 +116,16 @@ $(document).ready(
 
 
     }
-
-    alert("Checked results.. click on View Results button to see the results");
-
+    document.getElementById("view").disabled = false;
+    alert("Checked results. Click on View Results button to see the results");
+     document.getElementById("check").disabled = true;
   });
+
+    $('input[name="date_weather"]').change(function() {
+        if($(this).val() != '') {
+           document.getElementById("check").disabled = false;
+        }
+     });
 
 
     $("#view").click(function(){
