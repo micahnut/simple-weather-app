@@ -1,0 +1,50 @@
+<!DOCTYPE html">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="col-md-12">
+    <h4>Weather App</h4>
+  <div class="mt-4">
+    <input type="file" id="fileUpload" />
+    <input type="button" id="upload" value="Upload" onclick="Upload()" />
+  </div>
+    <hr />
+
+    <div style="display: none;" id="dvCSV">
+    </div>
+    <br>
+
+    <p>Input the date: </p>
+    <input type="date" id="date_weather" name="date_weather">
+    <button id="check" class="btn btn-primary">Check weather of the all data entry</button>
+    <button id="view" class="btn btn-primary">View Results</button>
+    <div class="mt-4" id="myDynamicTable">
+
+    </div>
+    <table id="tblData"
+              class="table table-condensed table-hover table-bordered
+              table-striped table-fit">
+              <thead>
+                <tr>
+                  <th class="fit">Name</th>
+                  <th class="fit">Phone Number</th>
+                  <th class="fit">City</th>
+                  <th class="fit">Weather</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+    </table>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
